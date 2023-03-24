@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8BD68F829CE030700255474 /* PrayerTimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD68F729CE030700255474 /* PrayerTimesApp.swift */; };
+		F8BD68FA29CE030700255474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD68F929CE030700255474 /* ContentView.swift */; };
+		F8BD68FC29CE030800255474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BD68FB29CE030800255474 /* Assets.xcassets */; };
+		F8BD68FF29CE030800255474 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BD68FE29CE030800255474 /* Preview Assets.xcassets */; };
+		F8BD690A29CE030800255474 /* PrayerTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD690929CE030800255474 /* PrayerTimesTests.swift */; };
+		F8BD691429CE030800255474 /* PrayerTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD691329CE030800255474 /* PrayerTimesUITests.swift */; };
+		F8BD691629CE030800255474 /* PrayerTimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD691529CE030800255474 /* PrayerTimesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8BD690629CE030800255474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8BD68EC29CE030700255474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BD68F329CE030700255474;
+			remoteInfo = PrayerTimes;
+		};
+		F8BD691029CE030800255474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8BD68EC29CE030700255474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BD68F329CE030700255474;
+			remoteInfo = PrayerTimes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8BD68F429CE030700255474 /* PrayerTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BD68F729CE030700255474 /* PrayerTimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesApp.swift; sourceTree = "<group>"; };
+		F8BD68F929CE030700255474 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8BD68FB29CE030800255474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8BD68FE29CE030800255474 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8BD690029CE030800255474 /* PrayerTimes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrayerTimes.entitlements; sourceTree = "<group>"; };
+		F8BD690529CE030800255474 /* PrayerTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BD690929CE030800255474 /* PrayerTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesTests.swift; sourceTree = "<group>"; };
+		F8BD690F29CE030800255474 /* PrayerTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BD691329CE030800255474 /* PrayerTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUITests.swift; sourceTree = "<group>"; };
+		F8BD691529CE030800255474 /* PrayerTimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8BD68F129CE030700255474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BD690229CE030800255474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BD690C29CE030800255474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8BD68EB29CE030700255474 = {
+			isa = PBXGroup;
+			children = (
+				F8BD68F629CE030700255474 /* PrayerTimes */,
+				F8BD690829CE030800255474 /* PrayerTimesTests */,
+				F8BD691229CE030800255474 /* PrayerTimesUITests */,
+				F8BD68F529CE030700255474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8BD68F529CE030700255474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD68F429CE030700255474 /* PrayerTimes.app */,
+				F8BD690529CE030800255474 /* PrayerTimesTests.xctest */,
+				F8BD690F29CE030800255474 /* PrayerTimesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8BD68F629CE030700255474 /* PrayerTimes */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD68F729CE030700255474 /* PrayerTimesApp.swift */,
+				F8BD68F929CE030700255474 /* ContentView.swift */,
+				F8BD68FB29CE030800255474 /* Assets.xcassets */,
+				F8BD690029CE030800255474 /* PrayerTimes.entitlements */,
+				F8BD68FD29CE030800255474 /* Preview Content */,
+			);
+			path = PrayerTimes;
+			sourceTree = "<group>";
+		};
+		F8BD68FD29CE030800255474 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD68FE29CE030800255474 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8BD690829CE030800255474 /* PrayerTimesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD690929CE030800255474 /* PrayerTimesTests.swift */,
+			);
+			path = PrayerTimesTests;
+			sourceTree = "<group>";
+		};
+		F8BD691229CE030800255474 /* PrayerTimesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD691329CE030800255474 /* PrayerTimesUITests.swift */,
+				F8BD691529CE030800255474 /* PrayerTimesUITestsLaunchTests.swift */,
+			);
+			path = PrayerTimesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8BD68F329CE030700255474 /* PrayerTimes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BD691929CE030800255474 /* Build configuration list for PBXNativeTarget "PrayerTimes" */;
+			buildPhases = (
+				F8BD68F029CE030700255474 /* Sources */,
+				F8BD68F129CE030700255474 /* Frameworks */,
+				F8BD68F229CE030700255474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrayerTimes;
+			productName = PrayerTimes;
+			productReference = F8BD68F429CE030700255474 /* PrayerTimes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8BD690429CE030800255474 /* PrayerTimesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BD691C29CE030800255474 /* Build configuration list for PBXNativeTarget "PrayerTimesTests" */;
+			buildPhases = (
+				F8BD690129CE030800255474 /* Sources */,
+				F8BD690229CE030800255474 /* Frameworks */,
+				F8BD690329CE030800255474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8BD690729CE030800255474 /* PBXTargetDependency */,
+			);
+			name = PrayerTimesTests;
+			productName = PrayerTimesTests;
+			productReference = F8BD690529CE030800255474 /* PrayerTimesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8BD690E29CE030800255474 /* PrayerTimesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BD691F29CE030800255474 /* Build configuration list for PBXNativeTarget "PrayerTimesUITests" */;
+			buildPhases = (
+				F8BD690B29CE030800255474 /* Sources */,
+				F8BD690C29CE030800255474 /* Frameworks */,
+				F8BD690D29CE030800255474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8BD691129CE030800255474 /* PBXTargetDependency */,
+			);
+			name = PrayerTimesUITests;
+			productName = PrayerTimesUITests;
+			productReference = F8BD690F29CE030800255474 /* PrayerTimesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8BD68EC29CE030700255474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F8BD68F329CE030700255474 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F8BD690429CE030800255474 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F8BD68F329CE030700255474;
+					};
+					F8BD690E29CE030800255474 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F8BD68F329CE030700255474;
+					};
+				};
+			};
+			buildConfigurationList = F8BD68EF29CE030700255474 /* Build configuration list for PBXProject "PrayerTimes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8BD68EB29CE030700255474;
+			productRefGroup = F8BD68F529CE030700255474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8BD68F329CE030700255474 /* PrayerTimes */,
+				F8BD690429CE030800255474 /* PrayerTimesTests */,
+				F8BD690E29CE030800255474 /* PrayerTimesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8BD68F229CE030700255474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BD68FF29CE030800255474 /* Preview Assets.xcassets in Resources */,
+				F8BD68FC29CE030800255474 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BD690329CE030800255474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BD690D29CE030800255474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8BD68F029CE030700255474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BD68FA29CE030700255474 /* ContentView.swift in Sources */,
+				F8BD68F829CE030700255474 /* PrayerTimesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BD690129CE030800255474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BD690A29CE030800255474 /* PrayerTimesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BD690B29CE030800255474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BD691629CE030800255474 /* PrayerTimesUITestsLaunchTests.swift in Sources */,
+				F8BD691429CE030800255474 /* PrayerTimesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8BD690729CE030800255474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8BD68F329CE030700255474 /* PrayerTimes */;
+			targetProxy = F8BD690629CE030800255474 /* PBXContainerItemProxy */;
+		};
+		F8BD691129CE030800255474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8BD68F329CE030700255474 /* PrayerTimes */;
+			targetProxy = F8BD691029CE030800255474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8BD691729CE030800255474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8BD691829CE030800255474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F8BD691A29CE030800255474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrayerTimes/PrayerTimes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrayerTimes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaman.PrayerTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F8BD691B29CE030800255474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrayerTimes/PrayerTimes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrayerTimes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaman.PrayerTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F8BD691D29CE030800255474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaman.PrayerTimesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrayerTimes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrayerTimes";
+			};
+			name = Debug;
+		};
+		F8BD691E29CE030800255474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaman.PrayerTimesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrayerTimes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrayerTimes";
+			};
+			name = Release;
+		};
+		F8BD692029CE030800255474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaman.PrayerTimesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PrayerTimes;
+			};
+			name = Debug;
+		};
+		F8BD692129CE030800255474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaman.PrayerTimesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PrayerTimes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8BD68EF29CE030700255474 /* Build configuration list for PBXProject "PrayerTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BD691729CE030800255474 /* Debug */,
+				F8BD691829CE030800255474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8BD691929CE030800255474 /* Build configuration list for PBXNativeTarget "PrayerTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BD691A29CE030800255474 /* Debug */,
+				F8BD691B29CE030800255474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8BD691C29CE030800255474 /* Build configuration list for PBXNativeTarget "PrayerTimesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BD691D29CE030800255474 /* Debug */,
+				F8BD691E29CE030800255474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8BD691F29CE030800255474 /* Build configuration list for PBXNativeTarget "PrayerTimesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BD692029CE030800255474 /* Debug */,
+				F8BD692129CE030800255474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8BD68EC29CE030700255474 /* Project object */;
+}
