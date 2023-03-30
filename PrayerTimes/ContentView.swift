@@ -13,12 +13,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack{
-                Text(days.first?.Imsak ?? "Yes")
-                Text(days.first?.Gunes ?? "No")
-                Text(days.first?.Ogle ?? "No")
-                Text(days.first?.Ikindi ?? "No")
-                Text(days.first?.Aksam ?? "No")
-                Text(days.first?.Yatsi ?? "No")
+                Text(days.first?.fajr ?? "Yes")
+                Text(days.first?.sunrise ?? "No")
+                Text(days.first?.dhuhr ?? "No")
+                Text(days.first?.asr ?? "No")
+                Text(days.first?.maghrib ?? "No")
+                Text(days.first?.isha ?? "No")
                 Button("Button") {
                     loadDays()
                 }
