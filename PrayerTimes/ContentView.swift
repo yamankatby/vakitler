@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var days = UserDefaults.standard.days ?? [Day]()
     
     var today: Day? {
-        return days.first
+        return days.first(where: { Calendar.current.isDateInToday($0.date) })
     }
     
     func formatDate(_ date: Date?) -> String {
