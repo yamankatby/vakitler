@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var days = [Day]()
+    @State var days = UserDefaults.standard.days ?? [Day]()
     
     var body: some View {
         VStack {
@@ -19,12 +19,10 @@ struct ContentView: View {
                 Text(days.first?.asr ?? "No")
                 Text(days.first?.maghrib ?? "No")
                 Text(days.first?.isha ?? "No")
-                Button("Button") {
-                    loadDays()
-                }
             }
             .padding()
         }
+        .onAppear(perform: loadDays)
         .background(Color.purple)
     }
     
@@ -40,6 +38,7 @@ struct ContentView: View {
                 if let response = try? JSONDecoder().decode([Day].self, from: data) {
                     DispatchQueue.main.async {
                         self.days = response
+                        UserDefaults.standard.days = response
                     }
                     return
                 }

@@ -10,10 +10,10 @@ import SwiftUI
 @main
 struct PrayerTimesApp: App {
     var body: some Scene {
-        MenuBarExtra("some") {
+        MenuBarExtra("Y") {
             VStack {
                 ContentView()
             }
-        }
+        }.menuBarExtraStyle(.window)
     }
 }
