@@ -10,15 +10,29 @@ import SwiftUI
 struct ContentView: View {
     @State var days = UserDefaults.standard.days ?? [Day]()
     
+    var today: Day? {
+        return days.first
+    }
+    
+    func formatDate(_ date: Date?) -> String {
+        guard let date = date else {
+            return "No"
+        }
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm:ss a"
+        return formatter.string(from: date)
+    }
+    
     var body: some View {
         VStack {
             VStack{
-                Text(days.first?.fajr ?? "Yes")
-                Text(days.first?.sunrise ?? "No")
-                Text(days.first?.dhuhr ?? "No")
-                Text(days.first?.asr ?? "No")
-                Text(days.first?.maghrib ?? "No")
-                Text(days.first?.isha ?? "No")
+                Text(formatDate(today?.fajr))
+                Text(formatDate(today?.sunrise))
+                Text(formatDate(today?.dhuhr))
+                Text(formatDate(today?.asr))
+                Text(formatDate(today?.maghrib))
+                Text(formatDate(today?.isha))
             }
             .padding()
         }
