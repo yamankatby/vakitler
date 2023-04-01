@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F87C19C729D5D0C700D7FA70 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C19C629D5D0C700D7FA70 /* Day.swift */; };
 		F87C19C929D5DF8300D7FA70 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C19C829D5DF8300D7FA70 /* UserDefaults.swift */; };
+		F884EDE629D83D760038B044 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884EDE529D83D760038B044 /* Color.swift */; };
 		F8BD68F829CE030700255474 /* PrayerTimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD68F729CE030700255474 /* PrayerTimesApp.swift */; };
 		F8BD68FA29CE030700255474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD68F929CE030700255474 /* ContentView.swift */; };
 		F8BD68FC29CE030800255474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BD68FB29CE030800255474 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		F87C19C629D5D0C700D7FA70 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		F87C19C829D5DF8300D7FA70 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		F884EDE529D83D760038B044 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F8BD68F429CE030700255474 /* PrayerTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BD68F729CE030700255474 /* PrayerTimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesApp.swift; sourceTree = "<group>"; };
 		F8BD68F929CE030700255474 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F8BD68FD29CE030800255474 /* Preview Content */,
 				F87C19C629D5D0C700D7FA70 /* Day.swift */,
 				F87C19C829D5DF8300D7FA70 /* UserDefaults.swift */,
+				F884EDE529D83D760038B044 /* Color.swift */,
 			);
 			path = PrayerTimes;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				F87C19C929D5DF8300D7FA70 /* UserDefaults.swift in Sources */,
 				F8BD68FA29CE030700255474 /* ContentView.swift in Sources */,
 				F8BD68F829CE030700255474 /* PrayerTimesApp.swift in Sources */,
+				F884EDE629D83D760038B044 /* Color.swift in Sources */,
 				F87C19C729D5D0C700D7FA70 /* Day.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

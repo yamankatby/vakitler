@@ -14,6 +14,8 @@ struct PrayerTimesApp: App {
             VStack {
                 ContentView()
             }
-        }.menuBarExtraStyle(.window)
+            .colorScheme(.light)
+        }
+        .menuBarExtraStyle(.window)
     }
 }

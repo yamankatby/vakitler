@@ -57,3 +57,7 @@ struct Day: Codable {
         return combinedDate
     }
 }
+
+enum PrayerTime {
+    case fajr, sunrise, dhuhr, asr, maghrib, isha
+}
