@@ -58,12 +58,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack{
-                TimeCell(label: "Fajr", date: today?.fajr, color: Color.blue)
-                TimeCell(label: "Sunrise", date: today?.sunrise, color: Color.purple)
-                TimeCell(label: "Dhuhr", date: today?.dhuhr, color: Color.green)
-                TimeCell(label: "Asr", date: today?.asr, color: Color.yellow)
-                TimeCell(label: "Maghrib", date: today?.maghrib, color: Color.orange)
-                TimeCell(label: "Isha", date: today?.isha, color: Color.red)
+                TimeCell(label: "Fajr", date: today?.fajr, color: Color("Orange100"))
+                TimeCell(label: "Sunrise", date: today?.sunrise, color: Color("Orange200"))
+                TimeCell(label: "Dhuhr", date: today?.dhuhr, color: Color("Orange300"))
+                TimeCell(label: "Asr", date: today?.asr, color: Color("Orange400"))
+                TimeCell(label: "Maghrib", date: today?.maghrib, color: Color("Orange500"))
+                TimeCell(label: "Isha", date: today?.isha, color: Color("Orange600"))
             }
         }
         .onAppear(perform: loadDays)
