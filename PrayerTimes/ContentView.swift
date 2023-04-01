@@ -7,6 +7,37 @@
 
 import SwiftUI
 
+struct TimeCell: View {
+    var label: String
+    
+    var date: Date?
+    
+    var color: Color
+    
+    var formattedDate: String {
+        guard let date = date else {
+            return "No"
+        }
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm:ss a"
+        return formatter.string(from: date)
+    }
+    
+    var body: some View {
+        HStack {
+            HStack {
+                Text(label)
+                Spacer()
+                Text(formattedDate)
+            }
+            .padding(16)
+        }
+        .frame(width: 240)
+        .background(color)
+    }
+}
+
 struct ContentView: View {
     @State var days = UserDefaults.standard.days ?? [Day]()
     
@@ -27,17 +58,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack{
-                Text(formatDate(today?.fajr))
-                Text(formatDate(today?.sunrise))
-                Text(formatDate(today?.dhuhr))
-                Text(formatDate(today?.asr))
-                Text(formatDate(today?.maghrib))
-                Text(formatDate(today?.isha))
+                TimeCell(label: "Fajr", date: today?.fajr, color: Color.blue)
+                TimeCell(label: "Sunrise", date: today?.sunrise, color: Color.purple)
+                TimeCell(label: "Dhuhr", date: today?.dhuhr, color: Color.green)
+                TimeCell(label: "Asr", date: today?.asr, color: Color.yellow)
+                TimeCell(label: "Maghrib", date: today?.maghrib, color: Color.orange)
+                TimeCell(label: "Isha", date: today?.isha, color: Color.red)
             }
-            .padding()
         }
         .onAppear(perform: loadDays)
-        .background(Color.purple)
     }
     
     func loadDays() {
