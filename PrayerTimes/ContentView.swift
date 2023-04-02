@@ -82,9 +82,27 @@ struct ContentView: View {
         }
     }
     
+    var nextTime: Date? {
+        switch prayerTime {
+        case .fajr: return today?.fajr
+        case .sunrise: return today?.sunrise
+        case .dhuhr: return today?.dhuhr
+        case .asr: return today?.asr
+        case .maghrib: return today?.maghrib
+        case .isha: return today?.isha
+        }
+    }
+    
     
     var body: some View {
         VStack(spacing: 0) {
+            HStack {
+                Spacer()
+                Text(nextTime!, style: .relative)
+                Spacer()
+            }
+            .frame(height: 140)
+            .background(palette._50)
             TimeCell(label: "Fajr", date: today?.fajr, color: palette._100)
             TimeCell(label: "Sunrise", date: today?.sunrise, color: palette._200)
             TimeCell(label: "Dhuhr", date: today?.dhuhr, color: palette._300)
