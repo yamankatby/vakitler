@@ -8,54 +8,86 @@
 import Foundation
 import SwiftUI
 
+struct Palette {
+    let _50: Color
+    let _100: Color
+    let _200: Color
+    let _300: Color
+    let _400: Color
+    let _500: Color
+    let _600: Color
+}
+
 extension Color {
-    static var blue50: Color { Color("Blue50") }
-    static var blue100: Color { Color("Blue100") }
-    static var blue200: Color { Color("Blue200") }
-    static var blue300: Color { Color("Blue300") }
-    static var blue400: Color { Color("Blue400") }
-    static var blue500: Color { Color("Blue500") }
-    static var blue600: Color { Color("Blue600") }
+    static var blue: Palette {
+        Palette(
+            _50: Color("Blue50"),
+            _100: Color("Blue100"),
+            _200: Color("Blue200"),
+            _300: Color("Blue300"),
+            _400: Color("Blue400"),
+            _500: Color("Blue500"),
+            _600: Color("Blue600")
+        )
+    }
     
-    static var indigo50: Color { Color("Indigo50") }
-    static var indigo100: Color { Color("Indigo100") }
-    static var indigo200: Color { Color("Indigo200") }
-    static var indigo300: Color { Color("Indigo300") }
-    static var indigo400: Color { Color("Indigo400") }
-    static var indigo500: Color { Color("Indigo500") }
-    static var indigo600: Color { Color("Indigo600") }
+    static var indigo: Palette {
+        Palette(
+            _50: Color("Indigo50"),
+            _100: Color("Indigo100"),
+            _200: Color("Indigo200"),
+            _300: Color("Indigo300"),
+            _400: Color("Indigo400"),
+            _500: Color("Indigo500"),
+            _600: Color("Indigo600")
+        )
+    }
     
-    static var orange50: Color { Color("Orange50") }
-    static var orange100: Color { Color("Orange100") }
-    static var orange200: Color { Color("Orange200") }
-    static var orange300: Color { Color("Orange300") }
-    static var orange400: Color { Color("Orange400") }
-    static var orange500: Color { Color("Orange500") }
-    static var orange600: Color { Color("Orange600") }
+    static var orange: Palette {
+        Palette(
+            _50: Color("Orange50"),
+            _100: Color("Orange100"),
+            _200: Color("Orange200"),
+            _300: Color("Orange300"),
+            _400: Color("Orange400"),
+            _500: Color("Orange500"),
+            _600: Color("Orange600")
+        )
+    }
     
-    static var rose50: Color { Color("Rose50") }
-    static var rose100: Color { Color("Rose100") }
-    static var rose200: Color { Color("Rose200") }
-    static var rose300: Color { Color("Rose300") }
-    static var rose400: Color { Color("Rose400") }
-    static var rose500: Color { Color("Rose500") }
-    static var rose600: Color { Color("Rose600") }
+    static var rose: Palette {
+        Palette(
+            _50: Color("Rose50"),
+            _100: Color("Rose100"),
+            _200: Color("Rose200"),
+            _300: Color("Rose300"),
+            _400: Color("Rose400"),
+            _500: Color("Rose500"),
+            _600: Color("Rose600")
+        )
+    }
     
-    static var sky50: Color { Color("Sky50") }
-    static var sky100: Color { Color("Sky100") }
-    static var sky200: Color { Color("Sky200") }
-    static var sky300: Color { Color("Sky300") }
-    static var sky400: Color { Color("Sky400") }
-    static var sky500: Color { Color("Sky500") }
-    static var sky600: Color { Color("Sky600") }
+    static var sky: Palette {
+        Palette(
+            _50: Color("Sky50"),
+            _100: Color("Sky100"),
+            _200: Color("Sky200"),
+            _300: Color("Sky300"),
+            _400: Color("Sky400"),
+            _500: Color("Sky500"),
+            _600: Color("Sky600")
+        )
+    }
     
-    static var yellow50: Color { Color("Yellow50") }
-    static var yellow100: Color { Color("Yellow100") }
-    static var yellow200: Color { Color("Yellow200") }
-    static var yellow300: Color { Color("Yellow300") }
-    static var yellow400: Color { Color("Yellow400") }
-    static var yellow500: Color { Color("Yellow500") }
-    static var yellow600: Color { Color("Yellow600") }
-    
-    
+    static var yellow: Palette {
+        Palette(
+            _50: Color("Yellow50"),
+            _100: Color("Yellow100"),
+            _200: Color("Yellow200"),
+            _300: Color("Yellow300"),
+            _400: Color("Yellow400"),
+            _500: Color("Yellow500"),
+            _600: Color("Yellow600")
+        )
+    }
 }

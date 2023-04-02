@@ -26,14 +26,11 @@ struct TimeCell: View {
     
     var body: some View {
         HStack {
-            HStack {
-                Text(label)
-                Spacer()
-                Text(formattedDate)
-            }
-            .padding(16)
+            Text(label)
+            Spacer()
+            Text(formattedDate)
         }
-        .frame(width: 240)
+        .padding(20)
         .background(color)
     }
 }
@@ -55,16 +52,45 @@ struct ContentView: View {
         return formatter.string(from: date)
     }
     
+    let now = Date()
+    
+    var prayerTime: PrayerTime {
+        if let isha = today?.isha, isha >= now {
+            return .isha
+        } else if let maghrib = today?.maghrib, maghrib >= now {
+            return .maghrib
+        } else if let asr = today?.asr, asr >= now {
+            return .asr
+        } else if let dhuhur = today?.dhuhr, dhuhur >= now {
+            return .dhuhr
+        } else if let sunrise = today?.sunrise, sunrise >= now {
+            return .sunrise
+        } else if let fajr = today?.fajr, fajr >= now {
+            return .fajr
+        }
+        return .dhuhr
+    }
+    
+    var palette: Palette {
+        switch prayerTime {
+        case .fajr: return Color.blue
+        case .sunrise: return Color.sky
+        case .dhuhr: return Color.orange
+        case .asr: return Color.yellow
+        case .maghrib: return Color.rose
+        case .isha: return Color.indigo
+        }
+    }
+    
+    
     var body: some View {
-        VStack {
-            VStack{
-                TimeCell(label: "Fajr", date: today?.fajr, color: Color.orange100)
-                TimeCell(label: "Sunrise", date: today?.sunrise, color: Color.orange200)
-                TimeCell(label: "Dhuhr", date: today?.dhuhr, color: Color.orange300)
-                TimeCell(label: "Asr", date: today?.asr, color: Color.orange400)
-                TimeCell(label: "Maghrib", date: today?.maghrib, color: Color.orange500)
-                TimeCell(label: "Isha", date: today?.isha, color: Color.orange600)
-            }
+        VStack(spacing: 0) {
+            TimeCell(label: "Fajr", date: today?.fajr, color: palette._100)
+            TimeCell(label: "Sunrise", date: today?.sunrise, color: palette._200)
+            TimeCell(label: "Dhuhr", date: today?.dhuhr, color: palette._300)
+            TimeCell(label: "Asr", date: today?.asr, color: palette._400)
+            TimeCell(label: "Maghrib", date: today?.maghrib, color: palette._500)
+            TimeCell(label: "Isha", date: today?.isha, color: palette._600)
         }
         .onAppear(perform: loadDays)
     }
