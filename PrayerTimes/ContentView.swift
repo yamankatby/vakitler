@@ -55,18 +55,18 @@ struct ContentView: View {
     let now = Date()
     
     var prayerTime: PrayerTime {
-        if let isha = today?.isha, isha >= now {
-            return .isha
-        } else if let maghrib = today?.maghrib, maghrib >= now {
-            return .maghrib
-        } else if let asr = today?.asr, asr >= now {
-            return .asr
-        } else if let dhuhur = today?.dhuhr, dhuhur >= now {
-            return .dhuhr
-        } else if let sunrise = today?.sunrise, sunrise >= now {
-            return .sunrise
-        } else if let fajr = today?.fajr, fajr >= now {
+        if let fajr = today?.fajr, fajr > now {
             return .fajr
+        } else if let sunrise = today?.sunrise, sunrise > now {
+            return .sunrise
+        } else if let dhuhur = today?.dhuhr, dhuhur > now {
+            return .dhuhr
+        } else if let asr = today?.asr, asr > now {
+            return .asr
+        }  else if let maghrib = today?.maghrib, maghrib > now {
+            return .maghrib
+        } else if let isha = today?.isha, isha > now {
+            return .isha
         }
         return .dhuhr
     }
