@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F831D87629E1EC96000EAD10 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831D87529E1EC96000EAD10 /* Models.swift */; };
 		F87C19C729D5D0C700D7FA70 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C19C629D5D0C700D7FA70 /* Day.swift */; };
 		F87C19C929D5DF8300D7FA70 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C19C829D5DF8300D7FA70 /* UserDefaults.swift */; };
 		F884EDE629D83D760038B044 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884EDE529D83D760038B044 /* Color.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F831D87529E1EC96000EAD10 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F87C19C629D5D0C700D7FA70 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		F87C19C829D5DF8300D7FA70 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		F884EDE529D83D760038B044 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				F87C19C629D5D0C700D7FA70 /* Day.swift */,
 				F87C19C829D5DF8300D7FA70 /* UserDefaults.swift */,
 				F884EDE529D83D760038B044 /* Color.swift */,
+				F831D87529E1EC96000EAD10 /* Models.swift */,
 			);
 			path = PrayerTimes;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				F8BD68F829CE030700255474 /* PrayerTimesApp.swift in Sources */,
 				F884EDE629D83D760038B044 /* Color.swift in Sources */,
 				F87C19C729D5D0C700D7FA70 /* Day.swift in Sources */,
+				F831D87629E1EC96000EAD10 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

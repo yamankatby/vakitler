@@ -7,6 +7,34 @@
 
 import SwiftUI
 
+let baseUrl = "https://vakitler.app/api"
+let countriesUrl = "\(baseUrl)/countries"
+let regionsUrl = "\(baseUrl)/regions"
+let citiesUrl = "\(baseUrl)/cities"
+let timesUrl = "\(baseUrl)/times"
+
+func getCountriesUrl() -> URL {
+    return URL(string: countriesUrl)!
+}
+
+func getRegionsUrl(countryId: String) -> URL {
+    var urlComponents = URLComponents(string: regionsUrl)!
+    urlComponents.queryItems = [URLQueryItem(name: "countryID", value: countryId)]
+    return urlComponents.url!
+}
+
+func getCitiesUrl(regionId: String) -> URL {
+    var urlComponents = URLComponents(string: citiesUrl)!
+    urlComponents.queryItems = [URLQueryItem(name: "regionID", value: regionId)]
+    return urlComponents.url!
+}
+
+func getTimesUrl(cityId: String) -> URL {
+    var urlComponents = URLComponents(string: timesUrl)!
+    urlComponents.queryItems = [URLQueryItem(name: "cityID", value: cityId)]
+    return urlComponents.url!
+}
+
 struct TimeCell: View {
     var label: String
     
@@ -96,10 +124,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            HStack {
-                Spacer()
-                Text(nextTime!, style: .relative)
-                Spacer()
+            VStack {
+                Button("settings") {
+                    NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                }
+                HStack {
+                    Spacer()
+                    Text(nextTime!, style: .relative)
+                    Spacer()
+                }
             }
             .frame(height: 140)
             .background(palette._50)
@@ -114,11 +147,7 @@ struct ContentView: View {
     }
     
     func loadDays() {
-        guard let url = URL(string: "https://vakitler.vercel.app/api/times?cityID=17893") else {
-            return
-        }
-        
-        let request = URLRequest(url: url)
+        let request = URLRequest(url: getTimesUrl(cityId: "17893"))
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
